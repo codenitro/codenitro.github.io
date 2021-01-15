@@ -5,17 +5,16 @@
     <link>https://codenitro.github.io/page/</link>
     <description>Recent content in Pages on Beautiful Hugo</description>
     <generator>Hugo -- gohugo.io</generator>
-    <managingEditor>youremail@domain.com (Some Person)</managingEditor>
-    <webMaster>youremail@domain.com (Some Person)</webMaster><atom:link href="https://codenitro.github.io/page/index.xml" rel="self" type="application/rss+xml" />
+    <managingEditor>aseem.gaurav[at]outlook.com (Aseem Gaurav)</managingEditor>
+    <webMaster>aseem.gaurav[at]outlook.com (Aseem Gaurav)</webMaster><atom:link href="https://codenitro.github.io/page/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About me</title>
       <link>https://codenitro.github.io/page/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <author>youremail@domain.com (Some Person)</author>
+      <author>aseem.gaurav[at]outlook.com (Aseem Gaurav)</author>
       <guid>https://codenitro.github.io/page/about/</guid>
-      <description>My name is Inigo Montoya. I have the following qualities:
- I rock a great mustache I&amp;rsquo;m extremely loyal to my family  What else do you need?
-my history To be honest, I&amp;rsquo;m having some trouble remembering right now, so why don&amp;rsquo;t you just watch my movie and it will answer all your questions.</description>
+      <description>My name is Aseem Gaurav. I am a Software Engineer with 12+ years of experience. I have worked across various This blog is a collction of code snippets, tutorials and learnings that I pick up or have picked up while working on various software systems over the years.
+work history   Microsoft Monotype Ion Trading Pitney Bowes - MapInfo  skills   C# .Net, .Net Core Azure  CosmosDB Functions Logic Apps MongoDB Azure Storage Azure Search App Service Event Hub Service Bus Queue   Elastic Search React Redux MobX React Native Flutter Node.</description>
     </item>
     
   </channel>

@@ -5,14 +5,14 @@
     <link>https://codenitro.github.io/tags/math/</link>
     <description>Recent content in math on Beautiful Hugo</description>
     <generator>Hugo -- gohugo.io</generator>
-    <managingEditor>youremail@domain.com (Some Person)</managingEditor>
-    <webMaster>youremail@domain.com (Some Person)</webMaster>
+    <managingEditor>aseem.gaurav[at]outlook.com (Aseem Gaurav)</managingEditor>
+    <webMaster>aseem.gaurav[at]outlook.com (Aseem Gaurav)</webMaster>
     <lastBuildDate>Sun, 05 Mar 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://codenitro.github.io/tags/math/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Math Sample</title>
       <link>https://codenitro.github.io/post/2017-03-05-math-sample/</link>
       <pubDate>Sun, 05 Mar 2017 00:00:00 +0000</pubDate>
-      <author>youremail@domain.com (Some Person)</author>
+      <author>aseem.gaurav[at]outlook.com (Aseem Gaurav)</author>
       <guid>https://codenitro.github.io/post/2017-03-05-math-sample/</guid>
       <description>&lt;p&gt;KaTeX can be used to generate complex math formulas server-side.&lt;/p&gt;
 &lt;p&gt;$$
