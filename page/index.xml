@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Pages on Beautiful Hugo</title>
+    <title>Pages on Code Nitro</title>
     <link>https://codenitro.github.io/page/</link>
-    <description>Recent content in Pages on Beautiful Hugo</description>
+    <description>Recent content in Pages on Code Nitro</description>
     <generator>Hugo -- gohugo.io</generator>
-    <managingEditor>aseem.gaurav[at]outlook.com (Aseem Gaurav)</managingEditor>
-    <webMaster>aseem.gaurav[at]outlook.com (Aseem Gaurav)</webMaster><atom:link href="https://codenitro.github.io/page/index.xml" rel="self" type="application/rss+xml" />
+    <managingEditor>aseem.gaurav@outlook.com (Aseem Gaurav)</managingEditor>
+    <webMaster>aseem.gaurav@outlook.com (Aseem Gaurav)</webMaster><atom:link href="https://codenitro.github.io/page/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About me</title>
       <link>https://codenitro.github.io/page/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <author>aseem.gaurav[at]outlook.com (Aseem Gaurav)</author>
+      <author>aseem.gaurav@outlook.com (Aseem Gaurav)</author>
       <guid>https://codenitro.github.io/page/about/</guid>
       <description>My name is Aseem Gaurav. I am a Software Engineer with 12+ years of experience. I have worked across various This blog is a collction of code snippets, tutorials and learnings that I pick up or have picked up while working on various software systems over the years.
 work history   Microsoft Monotype Ion Trading Pitney Bowes - MapInfo  skills   C# .Net, .Net Core Azure  CosmosDB Functions Logic Apps MongoDB Azure Storage Azure Search App Service Event Hub Service Bus Queue   Elastic Search React Redux MobX React Native Flutter Node.</description>

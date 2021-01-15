@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on Beautiful Hugo</title>
+    <title>Categories on Code Nitro</title>
     <link>https://codenitro.github.io/categories/</link>
-    <description>Recent content in Categories on Beautiful Hugo</description>
+    <description>Recent content in Categories on Code Nitro</description>
     <generator>Hugo -- gohugo.io</generator>
-    <managingEditor>aseem.gaurav[at]outlook.com (Aseem Gaurav)</managingEditor>
-    <webMaster>aseem.gaurav[at]outlook.com (Aseem Gaurav)</webMaster><atom:link href="https://codenitro.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <managingEditor>aseem.gaurav@outlook.com (Aseem Gaurav)</managingEditor>
+    <webMaster>aseem.gaurav@outlook.com (Aseem Gaurav)</webMaster><atom:link href="https://codenitro.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

@@ -1,64 +1,46 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Beautiful Hugo</title>
+    <title>Tags on Code Nitro</title>
     <link>https://codenitro.github.io/tags/</link>
-    <description>Recent content in Tags on Beautiful Hugo</description>
+    <description>Recent content in Tags on Code Nitro</description>
     <generator>Hugo -- gohugo.io</generator>
-    <managingEditor>aseem.gaurav[at]outlook.com (Aseem Gaurav)</managingEditor>
-    <webMaster>aseem.gaurav[at]outlook.com (Aseem Gaurav)</webMaster>
-    <lastBuildDate>Mon, 20 Mar 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://codenitro.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <managingEditor>aseem.gaurav@outlook.com (Aseem Gaurav)</managingEditor>
+    <webMaster>aseem.gaurav@outlook.com (Aseem Gaurav)</webMaster>
+    <lastBuildDate>Fri, 15 Jan 2021 18:18:16 +0530</lastBuildDate><atom:link href="https://codenitro.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>example</title>
-      <link>https://codenitro.github.io/tags/example/</link>
-      <pubDate>Mon, 20 Mar 2017 00:00:00 +0000</pubDate>
-      <author>aseem.gaurav[at]outlook.com (Aseem Gaurav)</author>
-      <guid>https://codenitro.github.io/tags/example/</guid>
+      <title>.Net Core</title>
+      <link>https://codenitro.github.io/tags/.net-core/</link>
+      <pubDate>Fri, 15 Jan 2021 18:18:16 +0530</pubDate>
+      <author>aseem.gaurav@outlook.com (Aseem Gaurav)</author>
+      <guid>https://codenitro.github.io/tags/.net-core/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>photoswipe</title>
-      <link>https://codenitro.github.io/tags/photoswipe/</link>
-      <pubDate>Mon, 20 Mar 2017 00:00:00 +0000</pubDate>
-      <author>aseem.gaurav[at]outlook.com (Aseem Gaurav)</author>
-      <guid>https://codenitro.github.io/tags/photoswipe/</guid>
+      <title>Firebase</title>
+      <link>https://codenitro.github.io/tags/firebase/</link>
+      <pubDate>Fri, 15 Jan 2021 18:18:16 +0530</pubDate>
+      <author>aseem.gaurav@outlook.com (Aseem Gaurav)</author>
+      <guid>https://codenitro.github.io/tags/firebase/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>bigimg</title>
-      <link>https://codenitro.github.io/tags/bigimg/</link>
-      <pubDate>Tue, 07 Mar 2017 00:00:00 +0000</pubDate>
-      <author>aseem.gaurav[at]outlook.com (Aseem Gaurav)</author>
-      <guid>https://codenitro.github.io/tags/bigimg/</guid>
+      <title>JWT</title>
+      <link>https://codenitro.github.io/tags/jwt/</link>
+      <pubDate>Fri, 15 Jan 2021 18:18:16 +0530</pubDate>
+      <author>aseem.gaurav@outlook.com (Aseem Gaurav)</author>
+      <guid>https://codenitro.github.io/tags/jwt/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>math</title>
-      <link>https://codenitro.github.io/tags/math/</link>
-      <pubDate>Sun, 05 Mar 2017 00:00:00 +0000</pubDate>
-      <author>aseem.gaurav[at]outlook.com (Aseem Gaurav)</author>
-      <guid>https://codenitro.github.io/tags/math/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>code</title>
-      <link>https://codenitro.github.io/tags/code/</link>
-      <pubDate>Tue, 08 Mar 2016 00:00:00 +0000</pubDate>
-      <author>aseem.gaurav[at]outlook.com (Aseem Gaurav)</author>
-      <guid>https://codenitro.github.io/tags/code/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>markdown</title>
-      <link>https://codenitro.github.io/tags/markdown/</link>
-      <pubDate>Fri, 20 Feb 2015 00:00:00 +0000</pubDate>
-      <author>aseem.gaurav[at]outlook.com (Aseem Gaurav)</author>
-      <guid>https://codenitro.github.io/tags/markdown/</guid>
+      <title>Web API</title>
+      <link>https://codenitro.github.io/tags/web-api/</link>
+      <pubDate>Fri, 15 Jan 2021 18:18:16 +0530</pubDate>
+      <author>aseem.gaurav@outlook.com (Aseem Gaurav)</author>
+      <guid>https://codenitro.github.io/tags/web-api/</guid>
       <description></description>
     </item>
     
