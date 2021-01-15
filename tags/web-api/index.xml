@@ -14,8 +14,8 @@
       <pubDate>Fri, 15 Jan 2021 18:18:16 +0530</pubDate>
       <author>aseem.gaurav@outlook.com (Aseem Gaurav)</author>
       <guid>https://codenitro.github.io/post/firebase-auth-asp-dotnet-core/</guid>
-      <description>Firebase is a great for building authentication into your client app. Whether your are building a web app or a mobile app, firebase provides one of the easiest ways to authenticate users so that they can login to your applicaiton and access content.
-While I was building a flutter app, I was able to setup the client side login flow based on the flutter documentation but could not find much reference about implementing authentication in a .</description>
+      <description>Firebase is great for inetgrating authentication based on social networks, email or phone number into your client app. Whether you are building a web app or a mobile app, firebase provides one of the easiest ways to authenticate users so that they can login to your applicaiton and access content.
+While I was building a mobile app, I was able to setup the client side login flow based on the flutter documentation but could not find much reference about implementing authentication in a .</description>
     </item>
     
   </channel>

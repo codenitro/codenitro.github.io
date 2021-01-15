@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
   <title>Firebase Authentication in .Net Core Web API - Code Nitro</title>
-  <meta name="description" content="Validate Firebase auth token in .Net Core Web API">
+  <meta name="description" content="Validate Firebase jwt auth token in .Net Core Web API">
   <meta name="author" content="Aseem Gaurav"/><script type="application/ld+json">
 {
     "@context": "http://schema.org",
@@ -57,9 +57,9 @@
     "name" : "Aseem Gaurav"
   },
   "headline": "Firebase Authentication in .Net Core Web API",
-  "description" : "Firebase is a great for building authentication into your client app. Whether your are building a web app or a mobile app, firebase provides one of the easiest ways to authenticate users so that they can login to your applicaiton and access content.\nWhile I was building a flutter app, I was able to setup the client side login flow based on the flutter documentation but could not find much reference about implementing authentication in a .",
+  "description" : "Firebase is great for inetgrating authentication based on social networks, email or phone number into your client app. Whether you are building a web app or a mobile app, firebase provides one of the easiest ways to authenticate users so that they can login to your applicaiton and access content.\nWhile I was building a mobile app, I was able to setup the client side login flow based on the flutter documentation but could not find much reference about implementing authentication in a .",
   "inLanguage" : "en",
-  "wordCount":  84 ,
+  "wordCount":  405 ,
   "datePublished" : "2021-01-15T18:18:16",
   "dateModified" : "2021-01-15T18:18:16",
   "image" : "https:\/\/codenitro.github.io\/img\/avatar-icon.png",
@@ -79,14 +79,14 @@
 </script>
 
 <meta property="og:title" content="Firebase Authentication in .Net Core Web API" />
-<meta property="og:description" content="Validate Firebase auth token in .Net Core Web API">
+<meta property="og:description" content="Validate Firebase jwt auth token in .Net Core Web API">
 <meta property="og:image" content="https://codenitro.github.io/img/avatar-icon.png" />
 <meta property="og:url" content="https://codenitro.github.io/post/firebase-auth-asp-dotnet-core/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Code Nitro" />
 
   <meta name="twitter:title" content="Firebase Authentication in .Net Core Web API" />
-  <meta name="twitter:description" content="Validate Firebase auth token in .Net Core Web API">
+  <meta name="twitter:description" content="Validate Firebase jwt auth token in .Net Core Web API">
   <meta name="twitter:image" content="https://codenitro.github.io/img/avatar-icon.png" />
   <meta name="twitter:card" content="summary" />
   <link href='https://codenitro.github.io/img/favicon.ico' rel='icon' type='image/x-icon'/>
@@ -231,7 +231,7 @@
               
               
                 
-                  <h2 class="post-subheading">Validate Firebase auth token in .Net Core Web API</h2>
+                  <h2 class="post-subheading">Validate Firebase jwt auth token in .Net Core Web API</h2>
                 
               
               
@@ -241,10 +241,10 @@
   <i class="fas fa-calendar"></i>&nbsp;Posted on map[Count:January 15, 2021]
   
   
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;2&nbsp;minutes
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;84&nbsp;words
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;405&nbsp;words
   
   
     
@@ -269,8 +269,40 @@
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <article role="main" class="blog-post">
-        <p>Firebase is a great for building authentication into your client app. Whether your are building a web app or a mobile app, firebase provides one of the easiest ways to authenticate users so that they can login to your applicaiton and access content.</p>
-<p>While I was building a flutter app, I was able to setup the client side login flow based on the flutter documentation but could not find much reference about implementing authentication in a .Net Core Web API using firebase auth token.</p>
+        <p>Firebase is great for inetgrating authentication based on social networks, email or phone number into your client app. Whether you are building a web app or a mobile app, firebase provides one of the easiest ways to authenticate users so that they can login to your applicaiton and access content.</p>
+<p>While I was building a mobile app, I was able to setup the client side login flow based on the flutter documentation but could not find much reference about implementing authentication in a .Net Core Web API using firebase auth token.</p>
+<p>Adding firebase token validation in a .Net Core web api is similar to setting up any other jwt token validation on the server side. All you need to do is configure jwt bearer options as shown below. Although you can find some nuget packages which make this possible, its always better to use functionality built into .Net Core framewrok as it is very easy to setup and use.</p>
+<div class="highlight"><pre class="chroma"><code class="language-cs" data-lang="cs"><span class="c1">// This method gets called by the runtime. Use this method to add services to the container.
+</span><span class="c1"></span><span class="k">public</span> <span class="k">void</span> <span class="n">ConfigureServices</span><span class="p">(</span><span class="n">IServiceCollection</span> <span class="n">services</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="p">...</span>
+    <span class="n">services</span><span class="p">.</span><span class="n">AddAuthentication</span><span class="p">(</span><span class="n">JwtBearerDefaults</span><span class="p">.</span><span class="n">AuthenticationScheme</span><span class="p">)</span>
+        <span class="p">.</span><span class="n">AddJwtBearer</span><span class="p">(</span><span class="n">options</span> <span class="p">=&gt;</span>
+        <span class="p">{</span>
+            <span class="n">options</span><span class="p">.</span><span class="n">Authority</span> <span class="p">=</span> <span class="s">&#34;https://securetoken.google.com/&lt;your-firebase-project-name&gt;&#34;</span><span class="p">;</span>
+            <span class="n">options</span><span class="p">.</span><span class="n">TokenValidationParameters</span> <span class="p">=</span> <span class="k">new</span> <span class="n">TokenValidationParameters</span>
+            <span class="p">{</span>
+                <span class="n">ValidateIssuer</span> <span class="p">=</span> <span class="k">true</span><span class="p">,</span>
+                <span class="n">ValidIssuer</span> <span class="p">=</span> <span class="s">&#34;https://securetoken.google.com/&lt;your-firebase-project-name&gt;&#34;</span><span class="p">,</span>
+                <span class="n">ValidateAudience</span> <span class="p">=</span> <span class="k">true</span><span class="p">,</span>
+                <span class="n">ValidAudience</span> <span class="p">=</span> <span class="s">&#34;&lt;your-firebase-project-name&gt;&#34;</span><span class="p">,</span>
+                <span class="n">ValidateLifetime</span> <span class="p">=</span> <span class="k">true</span>
+            <span class="p">};</span>
+        <span class="p">});</span>
+    <span class="p">...</span>
+<span class="p">}</span>
+</code></pre></div><p>You will need to use the correct using statements as shown below.</p>
+<div class="highlight"><pre class="chroma"><code class="language-cs" data-lang="cs"><span class="p">...</span>
+<span class="k">using</span> <span class="nn">Microsoft.AspNetCore.Authentication.JwtBearer</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">Microsoft.IdentityModel.Tokens</span><span class="p">;</span>
+<span class="p">...</span>
+</code></pre></div><p>To make sure that an api route can only be accessed by an authenticated user, all you need to do is put the <code>[Authorize]</code> attribute on the route controller.</p>
+<div class="highlight"><pre class="chroma"><code class="language-cs" data-lang="cs"><span class="na">[Authorize]</span>
+<span class="k">public</span> <span class="k">class</span> <span class="nc">MyApiController</span> <span class="p">:</span> <span class="n">ControllerBase</span>
+</code></pre></div><p>Now your server side is all setup and your api can now be called by an authenticated user who has the correct jwt token obtained by logging in via firebase authentication on the client side. Once you have successfully logged in on the client side, firebase returns a jwt auth token which needs to be passed as a http authorization header while calling the api from your client. Actual code will depend on the client code that you write and the language but the header key value should be as shown below:</p>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">key - &#39;Authorization&#39;
+value - `Bearer &lt;jwt-token-obtained-from-firebase&gt;`
+</code></pre></div><p>.Net core is a great framework to build web api&rsquo;s and to be able to integrate it with other frameworks is super cool. Setting up firebase authentication on client side is very easy and they have good documentation about it.</p>
 
 
         
