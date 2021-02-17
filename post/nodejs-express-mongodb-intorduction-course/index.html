@@ -7,8 +7,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>Firebase Authentication in .Net Core Web API - Code Nitro</title>
-  <meta name="description" content="Validate Firebase jwt auth token in .Net Core Web API">
+  <title>Node.js, Express and MongoDB - Code Nitro</title>
+  <meta name="description" content="An introductory course building API&#39;s using Node.js, Express and MongoDB">
   <meta name="author" content="Aseem Gaurav"/><script type="application/ld+json">
 {
     "@context": "http://schema.org",
@@ -44,8 +44,8 @@
         "@type": "ListItem",
         "position": 3,
         "item": {
-          "@id": "https:\/\/codenitro.github.io\/post\/firebase-auth-asp-dotnet-core\/",
-          "name": "Firebase authentication in . net core web a p i"
+          "@id": "https:\/\/codenitro.github.io\/post\/nodejs-express-mongodb-intorduction-course\/",
+          "name": "Node.js, express and mongo d b"
         }
     }]
 }
@@ -56,15 +56,15 @@
   "author": {
     "name" : "Aseem Gaurav"
   },
-  "headline": "Firebase Authentication in .Net Core Web API",
-  "description" : "Firebase is great for inetgrating authentication based on social networks, email or phone number into your client app. Whether you are building a web app or a mobile app, firebase provides one of the easiest ways to authenticate users so that they can login to your applicaiton and access content.\nWhile I was building a mobile app, I was able to setup the client side login flow based on the flutter documentation but could not find much reference about implementing authentication in a .",
+  "headline": "Node.js, Express and MongoDB",
+  "description" : "NodeJS Course - Basics  Node.js is an open-source, cross-platform, back-end JavaScript runtime environment that runs on the Chrome V8 engine and executes JavaScript code outside a web browser. Node.js lets developers use JavaScript to write command line tools and for server-side scripting—running scripts server-side to produce dynamic web page content before the page is sent to the user\u0026rsquo;s web browser. Wikipedia\nNodeJS is widely used in building api\u0026rsquo;s and server backend for web and mobile apps.",
   "inLanguage" : "en",
-  "wordCount":  405 ,
-  "datePublished" : "2021-01-15T18:18:16",
-  "dateModified" : "2021-01-15T18:18:16",
+  "wordCount":  318 ,
+  "datePublished" : "2021-02-17T16:27:31",
+  "dateModified" : "2021-02-17T16:27:31",
   "image" : "https:\/\/codenitro.github.io\/img\/avatar-icon.png",
-  "keywords" : [ "Firebase, .Net Core, Web API, JWT" ],
-  "mainEntityOfPage" : "https:\/\/codenitro.github.io\/post\/firebase-auth-asp-dotnet-core\/",
+  "keywords" : [ "nodejs, express, mongodb, beginner" ],
+  "mainEntityOfPage" : "https:\/\/codenitro.github.io\/post\/nodejs-express-mongodb-intorduction-course\/",
   "publisher" : {
     "@type": "Organization",
     "name" : "https:\/\/codenitro.github.io",
@@ -78,15 +78,15 @@
 }
 </script>
 
-<meta property="og:title" content="Firebase Authentication in .Net Core Web API" />
-<meta property="og:description" content="Validate Firebase jwt auth token in .Net Core Web API">
+<meta property="og:title" content="Node.js, Express and MongoDB" />
+<meta property="og:description" content="An introductory course building API&#39;s using Node.js, Express and MongoDB">
 <meta property="og:image" content="https://codenitro.github.io/img/avatar-icon.png" />
-<meta property="og:url" content="https://codenitro.github.io/post/firebase-auth-asp-dotnet-core/" />
+<meta property="og:url" content="https://codenitro.github.io/post/nodejs-express-mongodb-intorduction-course/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Code Nitro" />
 
-  <meta name="twitter:title" content="Firebase Authentication in .Net Core Web API" />
-  <meta name="twitter:description" content="Validate Firebase jwt auth token in .Net Core Web API">
+  <meta name="twitter:title" content="Node.js, Express and MongoDB" />
+  <meta name="twitter:description" content="An introductory course building API&#39;s using Node.js, Express and MongoDB">
   <meta name="twitter:image" content="https://codenitro.github.io/img/avatar-icon.png" />
   <meta name="twitter:card" content="summary" />
   <link href='https://codenitro.github.io/img/favicon.ico' rel='icon' type='image/x-icon'/>
@@ -226,25 +226,25 @@
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             <div class="post-heading">
               
-                <h1>Firebase Authentication in .Net Core Web API</h1>
+                <h1>Node.js, Express and MongoDB</h1>
               
               
               
                 
-                  <h2 class="post-subheading">Validate Firebase jwt auth token in .Net Core Web API</h2>
+                  <h2 class="post-subheading">An introductory course building API&#39;s using Node.js, Express and MongoDB</h2>
                 
               
               
                 <span class="post-meta">
   
   
-  <i class="fas fa-calendar"></i>&nbsp;Posted on January 15, 2021
+  <i class="fas fa-calendar"></i>&nbsp;Posted on February 17, 2021
   
   
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;2&nbsp;minutes
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;405&nbsp;words
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;318&nbsp;words
   
   
     
@@ -269,52 +269,98 @@
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <article role="main" class="blog-post">
-        <p>Firebase is great for inetgrating authentication based on social networks, email or phone number into your client app. Whether you are building a web app or a mobile app, firebase provides one of the easiest ways to authenticate users so that they can login to your applicaiton and access content.</p>
-<p>While I was building a mobile app, I was able to setup the client side login flow based on the flutter documentation but could not find much reference about implementing authentication in a .Net Core Web API using firebase auth token.</p>
-<p>Adding firebase token validation in a .Net Core web api is similar to setting up any other jwt token validation on the server side. All you need to do is configure jwt bearer options as shown below. Although you can find some nuget packages which make this possible, its always better to use functionality built into .Net Core framewrok as it is very easy to setup and use.</p>
-<div class="highlight"><pre class="chroma"><code class="language-cs" data-lang="cs"><span class="c1">// This method gets called by the runtime. Use this method to add services to the container.
-</span><span class="c1"></span><span class="k">public</span> <span class="k">void</span> <span class="n">ConfigureServices</span><span class="p">(</span><span class="n">IServiceCollection</span> <span class="n">services</span><span class="p">)</span>
-<span class="p">{</span>
-    <span class="p">...</span>
-    <span class="n">services</span><span class="p">.</span><span class="n">AddAuthentication</span><span class="p">(</span><span class="n">JwtBearerDefaults</span><span class="p">.</span><span class="n">AuthenticationScheme</span><span class="p">)</span>
-        <span class="p">.</span><span class="n">AddJwtBearer</span><span class="p">(</span><span class="n">options</span> <span class="p">=&gt;</span>
-        <span class="p">{</span>
-            <span class="n">options</span><span class="p">.</span><span class="n">Authority</span> <span class="p">=</span> <span class="s">&#34;https://securetoken.google.com/&lt;your-firebase-project-name&gt;&#34;</span><span class="p">;</span>
-            <span class="n">options</span><span class="p">.</span><span class="n">TokenValidationParameters</span> <span class="p">=</span> <span class="k">new</span> <span class="n">TokenValidationParameters</span>
-            <span class="p">{</span>
-                <span class="n">ValidateIssuer</span> <span class="p">=</span> <span class="k">true</span><span class="p">,</span>
-                <span class="n">ValidIssuer</span> <span class="p">=</span> <span class="s">&#34;https://securetoken.google.com/&lt;your-firebase-project-name&gt;&#34;</span><span class="p">,</span>
-                <span class="n">ValidateAudience</span> <span class="p">=</span> <span class="k">true</span><span class="p">,</span>
-                <span class="n">ValidAudience</span> <span class="p">=</span> <span class="s">&#34;&lt;your-firebase-project-name&gt;&#34;</span><span class="p">,</span>
-                <span class="n">ValidateLifetime</span> <span class="p">=</span> <span class="k">true</span>
-            <span class="p">};</span>
-        <span class="p">});</span>
-    <span class="p">...</span>
-<span class="p">}</span>
-</code></pre></div><p>You will need to use the correct using statements as shown below.</p>
-<div class="highlight"><pre class="chroma"><code class="language-cs" data-lang="cs"><span class="p">...</span>
-<span class="k">using</span> <span class="nn">Microsoft.AspNetCore.Authentication.JwtBearer</span><span class="p">;</span>
-<span class="k">using</span> <span class="nn">Microsoft.IdentityModel.Tokens</span><span class="p">;</span>
-<span class="p">...</span>
-</code></pre></div><p>To make sure that an api route can only be accessed by an authenticated user, all you need to do is put the <code>[Authorize]</code> attribute on the route controller.</p>
-<div class="highlight"><pre class="chroma"><code class="language-cs" data-lang="cs"><span class="na">[Authorize]</span>
-<span class="k">public</span> <span class="k">class</span> <span class="nc">MyApiController</span> <span class="p">:</span> <span class="n">ControllerBase</span>
-</code></pre></div><p>Now your server side is all setup and your api can now be called by an authenticated user who has the correct jwt token obtained by logging in via firebase authentication on the client side. Once you have successfully logged in on the client side, firebase returns a jwt auth token which needs to be passed as a http authorization header while calling the api from your client. Actual code will depend on the client code that you write and the language but the header key value should be as shown below:</p>
-<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">key - &#39;Authorization&#39;
-value - `Bearer &lt;jwt-token-obtained-from-firebase&gt;`
-</code></pre></div><p>.Net core is a great framework to build web api&rsquo;s and to be able to integrate it with other frameworks is super cool. Setting up firebase authentication on client side is very easy and they have good documentation about it.</p>
+        <h1 id="nodejs-course---basics">NodeJS Course - Basics</h1>
+<hr>
+<p>Node.js is an open-source, cross-platform, back-end JavaScript runtime environment that runs on the Chrome V8 engine and executes JavaScript code outside a web browser. Node.js lets developers use JavaScript to write command line tools and for server-side scripting—running scripts server-side to produce dynamic web page content before the page is sent to the user&rsquo;s web browser.
+<a href="https://en.wikipedia.org/wiki/Node.js">Wikipedia</a></p>
+<p>NodeJS is widely used in building api&rsquo;s and server backend for web and mobile apps. If you know javascript, its very easy to get started with NodeJS. In this course we will introduce you to node.js, how it works, the event loop. We will also cover how to use node to run javascript code, we will also introduce you to creating a server using express and mongodb.</p>
+<h2 id="this-course-is-for-you-if">This course is for you if:</h2>
+<ol>
+<li>You want to learn and get started with Node.js backend development</li>
+<li>You want to learn how to create backend API&rsquo;s for web or mobile apps</li>
+<li>You want to know how to use MongoDB in a Node.js API</li>
+</ol>
+<h2 id="course-contents">Course Contents</h2>
+<ol>
+<li>Introduction
+<ol>
+<li>What is Node.js?</li>
+<li>Installation and setup</li>
+<li>Running a node script</li>
+<li>Npm modules</li>
+</ol>
+</li>
+<li>Express
+<ol>
+<li>What is API?</li>
+<li>What is REST?</li>
+<li>Setting up express server</li>
+<li>Creating a REST API</li>
+<li>Serving JSON responses</li>
+</ol>
+</li>
+<li>Using Postman to test the API&rsquo;s</li>
+<li>API Verbs
+<ol>
+<li>GET, POST, PUT, PATCH, DELETE</li>
+<li>Implemneting different API verbs</li>
+</ol>
+</li>
+<li>Handling API routes in Express
+<ol>
+<li>Path parameters</li>
+<li>Route handler functions</li>
+<li>Express router</li>
+</ol>
+</li>
+<li>Middleware in express
+<ol>
+<li>What is a middleware?</li>
+<li>Express middleware pipeline</li>
+<li>Logger middleware</li>
+<li>Error handling middleware</li>
+</ol>
+</li>
+<li>Additional topics
+<ol>
+<li>Parsing request body</li>
+<li>Data validation</li>
+<li>Handling form data</li>
+<li>Serving static content</li>
+<li>Nodemon</li>
+<li>Http Ststus Codes</li>
+</ol>
+</li>
+<li>MongoDB
+<ol>
+<li>Installation/Setup on MongoDB Atlas</li>
+<li>What is NoSQL?</li>
+<li>Setting up Mongoose</li>
+<li>Mongoose schmea and models</li>
+<li>Create, Fetch, Delete, Update a document in MongoDB</li>
+</ol>
+</li>
+</ol>
+<p>Tasks, User profile, Blog engine</p>
+<h2 id="course-pre-requisites">Course Pre-requisites</h2>
+<p>To take this course, you should be familiar with:</p>
+<ol>
+<li>Programming in general</li>
+<li>Javascript or any other programming language</li>
+<li>Motivated and open to learning</li>
+</ol>
 
 
         
           <div class="blog-tags">
             
-              <a href="https://codenitro.github.io/tags/firebase/">Firebase</a>&nbsp;
+              <a href="https://codenitro.github.io/tags/nodejs/">nodejs</a>&nbsp;
             
-              <a href="https://codenitro.github.io/tags/.net-core/">.Net Core</a>&nbsp;
+              <a href="https://codenitro.github.io/tags/express/">express</a>&nbsp;
             
-              <a href="https://codenitro.github.io/tags/web-api/">Web API</a>&nbsp;
+              <a href="https://codenitro.github.io/tags/mongodb/">mongodb</a>&nbsp;
             
-              <a href="https://codenitro.github.io/tags/jwt/">JWT</a>&nbsp;
+              <a href="https://codenitro.github.io/tags/beginner/">beginner</a>&nbsp;
             
           </div>
         
@@ -329,42 +375,42 @@ value - `Bearer &lt;jwt-token-obtained-from-firebase&gt;`
     <ul class="share">
       
       <li>
-        <a href="//twitter.com/share?url=https%3a%2f%2fcodenitro.github.io%2fpost%2ffirebase-auth-asp-dotnet-core%2f&amp;text=Firebase%20Authentication%20in%20.Net%20Core%20Web%20API&amp;via=" target="_blank" title="Share on Twitter">
+        <a href="//twitter.com/share?url=https%3a%2f%2fcodenitro.github.io%2fpost%2fnodejs-express-mongodb-intorduction-course%2f&amp;text=Node.js%2c%20Express%20and%20MongoDB&amp;via=" target="_blank" title="Share on Twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
   
       
       <li>
-        <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fcodenitro.github.io%2fpost%2ffirebase-auth-asp-dotnet-core%2f" target="_blank" title="Share on Facebook">
+        <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fcodenitro.github.io%2fpost%2fnodejs-express-mongodb-intorduction-course%2f" target="_blank" title="Share on Facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
   
       
       <li>
-        <a href="//reddit.com/submit?url=https%3a%2f%2fcodenitro.github.io%2fpost%2ffirebase-auth-asp-dotnet-core%2f&amp;title=Firebase%20Authentication%20in%20.Net%20Core%20Web%20API" target="_blank" title="Share on Reddit">
+        <a href="//reddit.com/submit?url=https%3a%2f%2fcodenitro.github.io%2fpost%2fnodejs-express-mongodb-intorduction-course%2f&amp;title=Node.js%2c%20Express%20and%20MongoDB" target="_blank" title="Share on Reddit">
           <i class="fab fa-reddit"></i>
         </a>
       </li>
   
       
       <li>
-        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fcodenitro.github.io%2fpost%2ffirebase-auth-asp-dotnet-core%2f&amp;title=Firebase%20Authentication%20in%20.Net%20Core%20Web%20API" target="_blank" title="Share on LinkedIn">
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fcodenitro.github.io%2fpost%2fnodejs-express-mongodb-intorduction-course%2f&amp;title=Node.js%2c%20Express%20and%20MongoDB" target="_blank" title="Share on LinkedIn">
           <i class="fab fa-linkedin"></i>
         </a>
       </li>
   
       
       <li>
-        <a href="//www.stumbleupon.com/submit?url=https%3a%2f%2fcodenitro.github.io%2fpost%2ffirebase-auth-asp-dotnet-core%2f&amp;title=Firebase%20Authentication%20in%20.Net%20Core%20Web%20API" target="_blank" title="Share on StumbleUpon">
+        <a href="//www.stumbleupon.com/submit?url=https%3a%2f%2fcodenitro.github.io%2fpost%2fnodejs-express-mongodb-intorduction-course%2f&amp;title=Node.js%2c%20Express%20and%20MongoDB" target="_blank" title="Share on StumbleUpon">
           <i class="fab fa-stumbleupon"></i>
         </a>
       </li>
   
       
       <li>
-        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fcodenitro.github.io%2fpost%2ffirebase-auth-asp-dotnet-core%2f&amp;description=Firebase%20Authentication%20in%20.Net%20Core%20Web%20API" target="_blank" title="Share on Pinterest">
+        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fcodenitro.github.io%2fpost%2fnodejs-express-mongodb-intorduction-course%2f&amp;description=Node.js%2c%20Express%20and%20MongoDB" target="_blank" title="Share on Pinterest">
           <i class="fab fa-pinterest"></i>
         </a>
       </li>
@@ -386,10 +432,10 @@ value - `Bearer &lt;jwt-token-obtained-from-firebase&gt;`
       
         <ul class="pager blog-pager">
           
-          
-            <li class="next">
-              <a href="https://codenitro.github.io/post/nodejs-express-mongodb-intorduction-course/" data-toggle="tooltip" data-placement="top" title="Node.js, Express and MongoDB">Next Post &rarr;</a>
+            <li class="previous">
+              <a href="https://codenitro.github.io/post/firebase-auth-asp-dotnet-core/" data-toggle="tooltip" data-placement="top" title="Firebase Authentication in .Net Core Web API">&larr; Previous Post</a>
             </li>
+          
           
         </ul>
       
