@@ -7,11 +7,11 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>aseem.gaurav@outlook.com (Aseem Gaurav)</managingEditor>
     <webMaster>aseem.gaurav@outlook.com (Aseem Gaurav)</webMaster>
-    <lastBuildDate>Wed, 17 Feb 2021 15:27:31 +0530</lastBuildDate><atom:link href="https://codenitro.github.io/tags/beginner/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 17 Feb 2021 16:27:31 +0530</lastBuildDate><atom:link href="https://codenitro.github.io/tags/beginner/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Node.js, Express and MongoDB</title>
       <link>https://codenitro.github.io/post/nodejs-course-introduction/</link>
-      <pubDate>Wed, 17 Feb 2021 15:27:31 +0530</pubDate>
+      <pubDate>Wed, 17 Feb 2021 16:27:31 +0530</pubDate>
       <author>aseem.gaurav@outlook.com (Aseem Gaurav)</author>
       <guid>https://codenitro.github.io/post/nodejs-course-introduction/</guid>
       <description>NodeJS Course - Basics  Node.js is an open-source, cross-platform, back-end JavaScript runtime environment that runs on the Chrome V8 engine and executes JavaScript code outside a web browser. Node.js lets developers use JavaScript to write command line tools and for server-side scripting—running scripts server-side to produce dynamic web page content before the page is sent to the user&amp;rsquo;s web browser. Wikipedia
