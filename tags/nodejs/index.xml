@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Code Nitro</title>
-    <link>https://codenitro.github.io/post/</link>
-    <description>Recent content in Posts on Code Nitro</description>
+    <title>nodejs on Code Nitro</title>
+    <link>https://codenitro.github.io/tags/nodejs/</link>
+    <description>Recent content in nodejs on Code Nitro</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>aseem.gaurav@outlook.com (Aseem Gaurav)</managingEditor>
     <webMaster>aseem.gaurav@outlook.com (Aseem Gaurav)</webMaster>
-    <lastBuildDate>Wed, 17 Feb 2021 15:27:31 +0530</lastBuildDate><atom:link href="https://codenitro.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 17 Feb 2021 15:27:31 +0530</lastBuildDate><atom:link href="https://codenitro.github.io/tags/nodejs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Node.js, Express and MongoDB</title>
       <link>https://codenitro.github.io/post/nodejs-course-introduction/</link>
@@ -16,16 +16,6 @@
       <guid>https://codenitro.github.io/post/nodejs-course-introduction/</guid>
       <description>NodeJS Course - Basics  Node.js is an open-source, cross-platform, back-end JavaScript runtime environment that runs on the Chrome V8 engine and executes JavaScript code outside a web browser. Node.js lets developers use JavaScript to write command line tools and for server-side scripting—running scripts server-side to produce dynamic web page content before the page is sent to the user&amp;rsquo;s web browser. Wikipedia
 NodeJS is widely used in building api&amp;rsquo;s and server backend for web and mobile apps.</description>
-    </item>
-    
-    <item>
-      <title>Firebase Authentication in .Net Core Web API</title>
-      <link>https://codenitro.github.io/post/firebase-auth-asp-dotnet-core/</link>
-      <pubDate>Fri, 15 Jan 2021 18:18:16 +0530</pubDate>
-      <author>aseem.gaurav@outlook.com (Aseem Gaurav)</author>
-      <guid>https://codenitro.github.io/post/firebase-auth-asp-dotnet-core/</guid>
-      <description>Firebase is great for inetgrating authentication based on social networks, email or phone number into your client app. Whether you are building a web app or a mobile app, firebase provides one of the easiest ways to authenticate users so that they can login to your applicaiton and access content.
-While I was building a mobile app, I was able to setup the client side login flow based on the flutter documentation but could not find much reference about implementing authentication in a .</description>
     </item>
     
   </channel>
