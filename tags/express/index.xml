@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Express on Code Nitro</title>
+    <title>express on Code Nitro</title>
     <link>https://codenitro.github.io/tags/express/</link>
-    <description>Recent content in Express on Code Nitro</description>
+    <description>Recent content in express on Code Nitro</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>aseem.gaurav@outlook.com (Aseem Gaurav)</managingEditor>
     <webMaster>aseem.gaurav@outlook.com (Aseem Gaurav)</webMaster>
@@ -14,16 +14,6 @@
       <pubDate>Wed, 17 Feb 2021 16:27:31 +0530</pubDate>
       <author>aseem.gaurav@outlook.com (Aseem Gaurav)</author>
       <guid>https://codenitro.github.io/post/nodejs-express-mongodb-intorduction-course/</guid>
-      <description>NodeJS Course - Basics  Node.js is an open-source, cross-platform, back-end JavaScript runtime environment that runs on the Chrome V8 engine and executes JavaScript code outside a web browser. Node.js lets developers use JavaScript to write command line tools and for server-side scripting—running scripts server-side to produce dynamic web page content before the page is sent to the user&amp;rsquo;s web browser. Wikipedia
-NodeJS is widely used in building api&amp;rsquo;s and server backend for web and mobile apps.</description>
-    </item>
-    
-    <item>
-      <title>Node.js Course - Advanced - Part 1</title>
-      <link>https://codenitro.github.io/post/nodejs-course-advanced/</link>
-      <pubDate>Wed, 17 Feb 2021 15:48:29 +0530</pubDate>
-      <author>aseem.gaurav@outlook.com (Aseem Gaurav)</author>
-      <guid>https://codenitro.github.io/post/nodejs-course-advanced/</guid>
       <description>NodeJS Course - Basics  Node.js is an open-source, cross-platform, back-end JavaScript runtime environment that runs on the Chrome V8 engine and executes JavaScript code outside a web browser. Node.js lets developers use JavaScript to write command line tools and for server-side scripting—running scripts server-side to produce dynamic web page content before the page is sent to the user&amp;rsquo;s web browser. Wikipedia
 NodeJS is widely used in building api&amp;rsquo;s and server backend for web and mobile apps.</description>
     </item>
