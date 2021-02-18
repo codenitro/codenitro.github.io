@@ -9,16 +9,17 @@
     <webMaster>aseem.gaurav@outlook.com (Aseem Gaurav)</webMaster>
     <lastBuildDate>Thu, 18 Feb 2021 20:56:42 +0530</lastBuildDate><atom:link href="https://codenitro.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Production Ready Asp.Net Core WebAPI</title>
+      <title>Asp.Net Core WebAPI - New Project</title>
       <link>https://codenitro.github.io/post/aspnetcore-in-prod-new-project/</link>
       <pubDate>Thu, 18 Feb 2021 20:56:42 +0530</pubDate>
       <author>aseem.gaurav@outlook.com (Aseem Gaurav)</author>
       <guid>https://codenitro.github.io/post/aspnetcore-in-prod-new-project/</guid>
-      <description></description>
+      <description>After installing .Net Core Framework, you will be able to run dotnet commands from the command line. To check your installation is working fine, run the version command and it should show the version of .net core installed.
+ Open a command prompt window Run the command dotnet --version It will show an output as shown below. The version might differ in your case.  C:\GitHub&amp;gt;dotnet --version 5.0.103 When using vs code, a lot of dotnet functionality will be accessed via the dotnet command line.</description>
     </item>
     
     <item>
-      <title>Production Ready Asp.Net Core WebAPI</title>
+      <title>Asp.Net Core WebAPI - Installation and Setup</title>
       <link>https://codenitro.github.io/post/aspnetcore-in-prod-installation-and-setup/</link>
       <pubDate>Thu, 18 Feb 2021 20:18:38 +0530</pubDate>
       <author>aseem.gaurav@outlook.com (Aseem Gaurav)</author>

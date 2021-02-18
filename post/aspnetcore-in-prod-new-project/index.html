@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>Production Ready Asp.Net Core WebAPI - Code Nitro</title>
+  <title>Asp.Net Core WebAPI - New Project - Code Nitro</title>
   <meta name="description" content="Part 2 - Creating a new asp.net core web api project">
   <meta name="author" content="Aseem Gaurav"/><script type="application/ld+json">
 {
@@ -45,7 +45,7 @@
         "position": 3,
         "item": {
           "@id": "https:\/\/codenitro.github.io\/post\/aspnetcore-in-prod-new-project\/",
-          "name": "Production ready asp. net core web a p i"
+          "name": "Asp. net core web a p i new project"
         }
     }]
 }
@@ -56,10 +56,10 @@
   "author": {
     "name" : "Aseem Gaurav"
   },
-  "headline": "Production Ready Asp.Net Core WebAPI",
-  "description" : "",
+  "headline": "Asp.Net Core WebAPI - New Project",
+  "description" : "After installing .Net Core Framework, you will be able to run dotnet commands from the command line. To check your installation is working fine, run the version command and it should show the version of .net core installed.\n Open a command prompt window Run the command dotnet --version It will show an output as shown below. The version might differ in your case.  C:\\GitHub\u0026gt;dotnet --version 5.0.103 When using vs code, a lot of dotnet functionality will be accessed via the dotnet command line.",
   "inLanguage" : "en",
-  "wordCount":  0 ,
+  "wordCount":  437 ,
   "datePublished" : "2021-02-18T20:56:42",
   "dateModified" : "2021-02-18T20:56:42",
   "image" : "https:\/\/codenitro.github.io\/img\/avatar-icon.png",
@@ -78,14 +78,14 @@
 }
 </script>
 
-<meta property="og:title" content="Production Ready Asp.Net Core WebAPI" />
+<meta property="og:title" content="Asp.Net Core WebAPI - New Project" />
 <meta property="og:description" content="Part 2 - Creating a new asp.net core web api project">
 <meta property="og:image" content="https://codenitro.github.io/img/avatar-icon.png" />
 <meta property="og:url" content="https://codenitro.github.io/post/aspnetcore-in-prod-new-project/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Code Nitro" />
 
-  <meta name="twitter:title" content="Production Ready Asp.Net Core WebAPI" />
+  <meta name="twitter:title" content="Asp.Net Core WebAPI - New Project" />
   <meta name="twitter:description" content="Part 2 - Creating a new asp.net core web api project">
   <meta name="twitter:image" content="https://codenitro.github.io/img/avatar-icon.png" />
   <meta name="twitter:card" content="summary" />
@@ -226,7 +226,7 @@
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             <div class="post-heading">
               
-                <h1>Production Ready Asp.Net Core WebAPI</h1>
+                <h1>Asp.Net Core WebAPI - New Project</h1>
               
               
               
@@ -241,10 +241,10 @@
   <i class="fas fa-calendar"></i>&nbsp;Posted on February 18, 2021
   
   
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;0&nbsp;minutes
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;3&nbsp;minutes
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;0&nbsp;words
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;437&nbsp;words
   
   
     
@@ -269,7 +269,67 @@
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <article role="main" class="blog-post">
-        
+        <p>After installing .Net Core Framework, you will be able to run <code>dotnet</code> commands from the command line.
+To check your installation is working fine, run the version command and it should show the version of .net core installed.</p>
+<ol>
+<li>Open a command prompt window</li>
+<li>Run the command <code>dotnet --version</code>
+It will show an output as shown below. The version might differ in your case.</li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">C:\GitHub&gt;dotnet --version
+5.0.103
+</code></pre></div><p>When using vs code, a lot of dotnet functionality will be accessed via the <code>dotnet</code> command line.
+Running the command <code>dotnet new</code> will show you all the availbale project types. What we are interested in the WebAPI project.</p>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">C:\GitHub&gt;dotnet new
+Getting ready...
+Templates                                         Short Name               Language          Tags
+--------------------------------------------      -------------------      ------------      ----------------------
+...
+ASP.NET Core Web API                              webapi                   [C#], F#          Web/WebAPI
+...
+</code></pre></div><p>From the command line, go tohe folder where you want to create your project. I am using the folder <code>C:\GitHub\aspnet-core-webapi</code>.
+Once you are inside the folder from the command prompt run the below command to create a web api project.</p>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">C:\GitHub\aspnet-core-webapi&gt;dotnet new webapi -o Profile.API
+The template &#34;ASP.NET Core Web API&#34; was created successfully.
+
+Processing post-creation actions...
+Running &#39;dotnet restore&#39; on Profile.API\Profile.API.csproj...
+  Determining projects to restore...
+  Restored C:\GitHub\aspnet-core-webapi\Profile.API\Profile.API.csproj (in 6.25 sec).
+Restore succeeded.
+</code></pre></div><p>Lets have a look at the command that we just ran.
+<code>dotnet new webapi -o Profile.API</code>
+Here <code>dotnet</code> is calling the dotnet CLI.
+<code>new webapi</code> tells dotnet cli to create a new webapi project
+<code>-o Profile.API</code> tells dotnet cli to create all files in a folder named <code>Profile.API</code></p>
+<p>To see all available options for the new command you can run <code>dotnet new --help</code>. This works with all command names so you can get help for any command.</p>
+<p>Running the command successfully will create the below folder structure:
+<img src="/dotnet-project-structure-default.PNG" alt="Dotnet project default files"></p>
+<p>If you are coming from Visual Studio or previous .net versions, you will notice that dotnet core does not create a <code>.sln</code> or the <code>solution</code> file. In classic .net framework, solution file is used to keep a reference to all the projects. In case of .net core, this is not needed, although you can create one.</p>
+<p>now you can run the project either from the command line or from VS code. Lets do if from VS code for now. To run, all you need to do is press <code>F5</code>. If there are no errors, you should be able to access the api by going to the url:</p>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">https://localhost:5001/WeatherForecast
+</code></pre></div><p>This will return a json file which would look something like:</p>
+<div class="highlight"><pre class="chroma"><code class="language-json" data-lang="json"><span class="p">[</span>
+    <span class="p">{</span>
+        <span class="nt">&#34;date&#34;</span><span class="p">:</span><span class="s2">&#34;2021-02-20T00:19:19.0137514+05:30&#34;</span><span class="p">,</span><span class="nt">&#34;temperatureC&#34;</span><span class="p">:</span><span class="mi">-2</span><span class="p">,</span><span class="nt">&#34;temperatureF&#34;</span><span class="p">:</span><span class="mi">29</span><span class="p">,</span><span class="nt">&#34;summary&#34;</span><span class="p">:</span><span class="s2">&#34;Balmy&#34;</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+        <span class="nt">&#34;date&#34;</span><span class="p">:</span><span class="s2">&#34;2021-02-21T00:19:19.0142398+05:30&#34;</span><span class="p">,</span><span class="nt">&#34;temperatureC&#34;</span><span class="p">:</span><span class="mi">41</span><span class="p">,</span><span class="nt">&#34;temperatureF&#34;</span><span class="p">:</span><span class="mi">105</span><span class="p">,</span><span class="nt">&#34;summary&#34;</span><span class="p">:</span><span class="s2">&#34;Chilly&#34;</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+        <span class="nt">&#34;date&#34;</span><span class="p">:</span><span class="s2">&#34;2021-02-22T00:19:19.0142432+05:30&#34;</span><span class="p">,</span><span class="nt">&#34;temperatureC&#34;</span><span class="p">:</span><span class="mi">40</span><span class="p">,</span><span class="nt">&#34;temperatureF&#34;</span><span class="p">:</span><span class="mi">103</span><span class="p">,</span><span class="nt">&#34;summary&#34;</span><span class="p">:</span><span class="s2">&#34;Chilly&#34;</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+        <span class="nt">&#34;date&#34;</span><span class="p">:</span><span class="s2">&#34;2021-02-23T00:19:19.0142437+05:30&#34;</span><span class="p">,</span><span class="nt">&#34;temperatureC&#34;</span><span class="p">:</span><span class="mi">38</span><span class="p">,</span><span class="nt">&#34;temperatureF&#34;</span><span class="p">:</span><span class="mi">100</span><span class="p">,</span><span class="nt">&#34;summary&#34;</span><span class="p">:</span><span class="s2">&#34;Hot&#34;</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+        <span class="nt">&#34;date&#34;</span><span class="p">:</span><span class="s2">&#34;2021-02-24T00:19:19.014244+05:30&#34;</span><span class="p">,</span><span class="nt">&#34;temperatureC&#34;</span><span class="p">:</span><span class="mi">17</span><span class="p">,</span><span class="nt">&#34;temperatureF&#34;</span><span class="p">:</span><span class="mi">62</span><span class="p">,</span><span class="nt">&#34;summary&#34;</span><span class="p">:</span><span class="s2">&#34;Sweltering&#34;</span>
+    <span class="p">}</span>
+<span class="p">]</span>
+</code></pre></div><p>Congratulations!!!
+You have successfully created your first asp.net core api.</p>
+<p><a href="https://github.com/cottonstartiet/aspnet-core-webapi/tree/dab7899ec921b6e18ce30c7ffc5cb6cfad5e7fd0">Github Code - Download</a></p>
+
 
         
           <div class="blog-tags">
@@ -299,7 +359,7 @@
     <ul class="share">
       
       <li>
-        <a href="//twitter.com/share?url=https%3a%2f%2fcodenitro.github.io%2fpost%2faspnetcore-in-prod-new-project%2f&amp;text=Production%20Ready%20Asp.Net%20Core%20WebAPI&amp;via=" target="_blank" title="Share on Twitter">
+        <a href="//twitter.com/share?url=https%3a%2f%2fcodenitro.github.io%2fpost%2faspnetcore-in-prod-new-project%2f&amp;text=Asp.Net%20Core%20WebAPI%20-%20New%20Project&amp;via=" target="_blank" title="Share on Twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -313,28 +373,28 @@
   
       
       <li>
-        <a href="//reddit.com/submit?url=https%3a%2f%2fcodenitro.github.io%2fpost%2faspnetcore-in-prod-new-project%2f&amp;title=Production%20Ready%20Asp.Net%20Core%20WebAPI" target="_blank" title="Share on Reddit">
+        <a href="//reddit.com/submit?url=https%3a%2f%2fcodenitro.github.io%2fpost%2faspnetcore-in-prod-new-project%2f&amp;title=Asp.Net%20Core%20WebAPI%20-%20New%20Project" target="_blank" title="Share on Reddit">
           <i class="fab fa-reddit"></i>
         </a>
       </li>
   
       
       <li>
-        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fcodenitro.github.io%2fpost%2faspnetcore-in-prod-new-project%2f&amp;title=Production%20Ready%20Asp.Net%20Core%20WebAPI" target="_blank" title="Share on LinkedIn">
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fcodenitro.github.io%2fpost%2faspnetcore-in-prod-new-project%2f&amp;title=Asp.Net%20Core%20WebAPI%20-%20New%20Project" target="_blank" title="Share on LinkedIn">
           <i class="fab fa-linkedin"></i>
         </a>
       </li>
   
       
       <li>
-        <a href="//www.stumbleupon.com/submit?url=https%3a%2f%2fcodenitro.github.io%2fpost%2faspnetcore-in-prod-new-project%2f&amp;title=Production%20Ready%20Asp.Net%20Core%20WebAPI" target="_blank" title="Share on StumbleUpon">
+        <a href="//www.stumbleupon.com/submit?url=https%3a%2f%2fcodenitro.github.io%2fpost%2faspnetcore-in-prod-new-project%2f&amp;title=Asp.Net%20Core%20WebAPI%20-%20New%20Project" target="_blank" title="Share on StumbleUpon">
           <i class="fab fa-stumbleupon"></i>
         </a>
       </li>
   
       
       <li>
-        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fcodenitro.github.io%2fpost%2faspnetcore-in-prod-new-project%2f&amp;description=Production%20Ready%20Asp.Net%20Core%20WebAPI" target="_blank" title="Share on Pinterest">
+        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fcodenitro.github.io%2fpost%2faspnetcore-in-prod-new-project%2f&amp;description=Asp.Net%20Core%20WebAPI%20-%20New%20Project" target="_blank" title="Share on Pinterest">
           <i class="fab fa-pinterest"></i>
         </a>
       </li>
@@ -356,7 +416,7 @@
                   <ul>
                 
                 
-                    <li><a href="/post/aspnetcore-in-prod-installation-and-setup/">Production Ready Asp.Net Core WebAPI</a></li>
+                    <li><a href="/post/aspnetcore-in-prod-installation-and-setup/">Asp.Net Core WebAPI - Installation and Setup</a></li>
                 
                     <li><a href="/post/aspnetcore-in-production/">Production Ready Asp.Net Core WebAPI</a></li>
                 
@@ -370,7 +430,7 @@
         <ul class="pager blog-pager">
           
             <li class="previous">
-              <a href="https://codenitro.github.io/post/aspnetcore-in-prod-installation-and-setup/" data-toggle="tooltip" data-placement="top" title="Production Ready Asp.Net Core WebAPI">&larr; Previous Post</a>
+              <a href="https://codenitro.github.io/post/aspnetcore-in-prod-installation-and-setup/" data-toggle="tooltip" data-placement="top" title="Asp.Net Core WebAPI - Installation and Setup">&larr; Previous Post</a>
             </li>
           
           
