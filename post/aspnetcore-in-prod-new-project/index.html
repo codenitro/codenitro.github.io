@@ -59,7 +59,7 @@
   "headline": "Asp.Net Core WebAPI - New Project",
   "description" : "After installing .Net Core Framework, you will be able to run dotnet commands from the command line. To check your installation is working fine, run the version command and it should show the version of .net core installed.\n Open a command prompt window Run the command dotnet --version It will show an output as shown below. The version might differ in your case.  C:\\GitHub\u0026gt;dotnet --version 5.0.103 When using vs code, a lot of dotnet functionality will be accessed via the dotnet command line.",
   "inLanguage" : "en",
-  "wordCount":  437 ,
+  "wordCount":  530 ,
   "datePublished" : "2021-02-18T20:56:42",
   "dateModified" : "2021-02-18T20:56:42",
   "image" : "https:\/\/codenitro.github.io\/img\/avatar-icon.png",
@@ -244,7 +244,7 @@
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;3&nbsp;minutes
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;437&nbsp;words
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;530&nbsp;words
   
   
     
@@ -329,6 +329,20 @@ Here <code>dotnet</code> is calling the dotnet CLI.
 </code></pre></div><p>Congratulations!!!
 You have successfully created your first asp.net core api.</p>
 <p><a href="https://github.com/cottonstartiet/aspnet-core-webapi/tree/dab7899ec921b6e18ce30c7ffc5cb6cfad5e7fd0">Github Code - Download</a></p>
+<p>Dotnet core webapi comes with bilt in support for Swagger. If you go to the Startup.cs class, you can see that the necessary setup for swagger has already been done for you.
+<code>Startup.cs</code></p>
+<div class="highlight"><pre class="chroma"><code class="language-cs" data-lang="cs"><span class="n">services</span><span class="p">.</span><span class="n">AddSwaggerGen</span><span class="p">(</span><span class="n">c</span> <span class="p">=&gt;</span>
+<span class="p">{</span>
+    <span class="n">c</span><span class="p">.</span><span class="n">SwaggerDoc</span><span class="p">(</span><span class="s">&#34;v1&#34;</span><span class="p">,</span> <span class="k">new</span> <span class="n">OpenApiInfo</span> <span class="p">{</span> <span class="n">Title</span> <span class="p">=</span> <span class="s">&#34;Profile.API&#34;</span><span class="p">,</span> <span class="n">Version</span> <span class="p">=</span> <span class="s">&#34;v1&#34;</span> <span class="p">});</span>
+<span class="p">});</span>
+</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-cs" data-lang="cs"><span class="k">if</span> <span class="p">(</span><span class="n">env</span><span class="p">.</span><span class="n">IsDevelopment</span><span class="p">())</span>
+<span class="p">{</span>
+    <span class="n">app</span><span class="p">.</span><span class="n">UseDeveloperExceptionPage</span><span class="p">();</span>
+    <span class="n">app</span><span class="p">.</span><span class="n">UseSwagger</span><span class="p">();</span>
+    <span class="n">app</span><span class="p">.</span><span class="n">UseSwaggerUI</span><span class="p">(</span><span class="n">c</span> <span class="p">=&gt;</span> <span class="n">c</span><span class="p">.</span><span class="n">SwaggerEndpoint</span><span class="p">(</span><span class="s">&#34;/swagger/v1/swagger.json&#34;</span><span class="p">,</span> <span class="s">&#34;Profile.API v1&#34;</span><span class="p">));</span>
+<span class="p">}</span>
+</code></pre></div><p>Swagger provides a way to document your api&rsquo;s and an easy way to try it out. You can access swagger by going to the url <a href="https://localhost:5001/swagger/">https://localhost:5001/swagger/</a></p>
+<p>For more details on swagger check out: <a href="https://swagger.io/">Swagger</a></p>
 
 
         
