@@ -7,15 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>aseem.gaurav@outlook.com (Aseem Gaurav)</managingEditor>
     <webMaster>aseem.gaurav@outlook.com (Aseem Gaurav)</webMaster>
-    <lastBuildDate>Wed, 17 Feb 2021 16:27:31 +0530</lastBuildDate><atom:link href="https://codenitro.github.io/tags/express/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 04 Mar 2021 00:10:16 +0530</lastBuildDate><atom:link href="https://codenitro.github.io/tags/express/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Node.js, Express and MongoDB</title>
-      <link>https://codenitro.github.io/post/nodejs-express-mongodb-intorduction-course/</link>
-      <pubDate>Wed, 17 Feb 2021 16:27:31 +0530</pubDate>
+      <title>Express &amp; Node.js - Getting Started</title>
+      <link>https://codenitro.github.io/post/node-express-getting-started/</link>
+      <pubDate>Thu, 04 Mar 2021 00:10:16 +0530</pubDate>
       <author>aseem.gaurav@outlook.com (Aseem Gaurav)</author>
-      <guid>https://codenitro.github.io/post/nodejs-express-mongodb-intorduction-course/</guid>
-      <description>NodeJS Course - Basics  Node.js is an open-source, cross-platform, back-end JavaScript runtime environment that runs on the Chrome V8 engine and executes JavaScript code outside a web browser. Node.js lets developers use JavaScript to write command line tools and for server-side scripting—running scripts server-side to produce dynamic web page content before the page is sent to the user&amp;rsquo;s web browser. Wikipedia
-NodeJS is widely used in building api&amp;rsquo;s and server backend for web and mobile apps.</description>
+      <guid>https://codenitro.github.io/post/node-express-getting-started/</guid>
+      <description>If you are new to node.js and want to learn how to create a simple api server in node.js using the Express framework, this is the place to get started. We will start with the basics and in future blogs we will be move into advanced topics which will tell you how to run flutter in a production app.
+So lets get started.
+Download and install Node.js (https://nodejs.org/en/)[https://nodejs.org/en/]
+NPM https://www.npmjs.com/</description>
     </item>
     
   </channel>
